@@ -43,7 +43,7 @@
 			 <?php
 				$host = "akhirwanappserver.database.windows.net";
 				$user = "akhirwan";
-				$pass = "b4b4_gomeZ";
+				$pass = "Padaringan_k383k";
 				$db = "dicodingdb";
 
 				try {
@@ -77,16 +77,19 @@
 					try {
 						$sql_select = "SELECT * FROM Registration";
 						$stmt = $conn->query($sql_select);
+						$no = 1;
 						$registrants = $stmt->fetchAll(); 
 						if(count($registrants) > 0) {
 							echo "<h2>People who are registered:</h2>";
 							echo "<div class=''><table class='table table-hover table-striped'>";
-							echo "<tr class='success'><th>Name</th>";
+							echo "<tr class='success'><th>No</th>";
+							echo "<th>Name</th>";
 							echo "<th>Email</th>";
 							echo "<th>Job</th>";
 							echo "<th>Date</th></tr>";
 							foreach($registrants as $registrant) {
-								echo "<tr><td>".$registrant['name']."</td>";
+								echo "<tr><td>".$no++."</td>";
+								echo "<td>".$registrant['name']."</td>";
 								echo "<td>".$registrant['email']."</td>";
 								echo "<td>".$registrant['job']."</td>";
 								echo "<td>".$registrant['date']."</td></tr>";
