@@ -43,7 +43,7 @@
 			 <?php
 				$host = "akhirwanappserver.database.windows.net";
 				$user = "akhirwan";
-				$pass = "padaringan_k383k";
+				$pass = "Padaringan_k383k";
 				$db = "dicodingdb";
 
 				try {
