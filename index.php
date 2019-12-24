@@ -81,7 +81,7 @@
 						$registrants = $stmt->fetchAll(); 
 						if(count($registrants) > 0) {
 							echo "<h2>People who are registered:</h2>";
-							echo "<div class=''><table class='table table-hover table-striped'>";
+							echo "<div class='responsive'><table class='table table-hover table-striped'>";
 							echo "<tr class='success'><th>No</th>";
 							echo "<th>Name</th>";
 							echo "<th>Email</th>";
